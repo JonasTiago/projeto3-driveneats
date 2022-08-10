@@ -48,8 +48,7 @@ header > p {
 }
 
 .options {
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow-x: scroll;
     display: flex;
 }
 
@@ -62,7 +61,7 @@ header > p {
     margin:10px 15px  20px 0px;
     height: 216px;
     width: 172px;
-    padding: 15px 10px;
+    padding: 15px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.23);
     border-radius: 9px;
 }
@@ -96,7 +95,7 @@ header > p {
 }
 
 .sobremesa-section {
-    margin: 20px 0 96px 20px;   
+    margin: 20px 0 110px 20px;   
 }
 
 footer {

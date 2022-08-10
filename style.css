@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* font-family: 'Righteous', cursive; */
+/*cabecario*/
+header {
+    position: fixed;
+    top :0;
+    left: 0;
+    background-color: red;
+    width: 100vw;
+    height: 15vh;
+    max-height: 115px;
+    color: white;
+    
+}
+header > h1 {
+    font-family: 'Righteous', cursive;
+    margin: 3vh 0 0 4vw;
+    font-size: 44px;
+}
+
+header > p {
+    font-size: 14px;
+    margin: 0 0 18px 4vw;
+}

@@ -1,24 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 /* font-family: 'Righteous', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
 /*cabecario*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
 header {
     position: fixed;
     top :0;
     left: 0;
     background-color: red;
     width: 100vw;
-    height: 15vh;
-    max-height: 115px;
+    height: 95px;
     color: white;
     
 }
 header > h1 {
     font-family: 'Righteous', cursive;
-    margin: 3vh 0 0 4vw;
+    margin: 20px 0 0 20px;
     font-size: 44px;
+    letter-spacing: -1,2%;
 }
 
 header > p {
-    font-size: 14px;
-    margin: 0 0 18px 4vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0 0 0 20px;
+    line-height: 21px;
+}
+
+.prato-section {
+    margin: 123px 0 0 20px;
+
+}
+
+.section-titulo {
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 1.8%;
+    font-family: 'Righteous', cursive;
+}
+
+.options {
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.option {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:10px 15px  20px 0px;
+    height: 216px;
+    width: 172px;
+    padding: 15px 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.23);
+    border-radius: 9px;
+}
+
+.option img {
+    width: 144px;
+    height: 87px;
+}
+
+.option h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.option  > :nth-child(3) {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    margin: 5px 0;
+
+}
+
+.option  > :nth-child(4) {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bebida-section {
+    margin: 20px 0 0 20px;   
+}
+
+.sobremesa-section {
+    margin: 20px 0 96px 20px;   
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    height: 92px;
+    width: 100vw;
+    text-align: center;
+}
+
+footer button {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #CBCBCB;
+    color: #fff;
 }

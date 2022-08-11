@@ -1,23 +1,29 @@
-let pratos = document.querySelector(".pratos");
-let bebidas = document.querySelector(".bebidas");
-let sobremesa = document.querySelector(".sobremesa");
-console.log(pratos.parentElement.classList)
+let pratos = document.getElementById("pratos") 
+let bebidas = document.getElementById("bebidas");
+let sobremesa = document.getElementById("sobremesa");
 
 
 pratos.addEventListener('click', (event) => {
-    itemSelecionado(event)
+  naoSelecionado(pratos)
+  itemSelecionado(event)
+    
 })
 
 bebidas.addEventListener('click', (event) => {
+  naoSelecionado(bebidas)
   itemSelecionado(event)
+  
 })
 
 sobremesa.addEventListener('click', (event) => {
+  naoSelecionado(sobremesa)
   itemSelecionado(event)
+  
 })
 
-function itemSelecionado(event) {
-  let alvo = event.target
+
+const itemSelecionado = (event) => {
+  const alvo = event.target
   const classes = alvo.classList
 
   if(classes === "option"){
@@ -27,3 +33,20 @@ function itemSelecionado(event) {
     pai.classList.add("selecionado")
   }
 }
+
+
+const naoSelecionado = (item) => {
+  let pratos = item.getElementsByClassName('option')
+
+  for(let i = 0; i < pratos.length; i++){
+    let test = pratos[i].classList
+    test.forEach((item) => {
+      if(item == "selecionado"){
+        pratos[i].classList.remove("selecionado")
+      } 
+    })
+  }
+
+}
+
+

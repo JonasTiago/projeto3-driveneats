@@ -1,52 +1,15 @@
-let pratos = document.getElementById("pratos") 
-let bebidas = document.getElementById("bebidas");
-let sobremesa = document.getElementById("sobremesa");
 
 
-pratos.addEventListener('click', (event) => {
-  naoSelecionado(pratos)
-  itemSelecionado(event)
-    
-})
+function itemSelecionado(escolha, sec){
 
-bebidas.addEventListener('click', (event) => {
-  naoSelecionado(bebidas)
-  itemSelecionado(event)
-  
-})
+  let naoSelecionado = document.querySelector(sec + '> .selecionado')
+  if(naoSelecionado != null){
+      naoSelecionado.classList.remove("selecionado")
+  } 
 
-sobremesa.addEventListener('click', (event) => {
-  naoSelecionado(sobremesa)
-  itemSelecionado(event)
-  
-})
+  let selecionado = document.querySelector(escolha)
+  selecionado.classList.toggle('selecionado')
 
-
-const itemSelecionado = (event) => {
-  const alvo = event.target
-  const classes = alvo.classList
-
-  if(classes === "option"){
-    alvo.classList.add("selecionado");
-  } else{
-    let pai = alvo.parentNode
-    pai.classList.add("selecionado")
-  }
+  let preco = document.querySelector(sec +"> .selecionado > :nth-child(4)")
+  console.log(preco)
 }
-
-
-const naoSelecionado = (item) => {
-  let pratos = item.getElementsByClassName('option')
-
-  for(let i = 0; i < pratos.length; i++){
-    let test = pratos[i].classList
-    test.forEach((item) => {
-      if(item == "selecionado"){
-        pratos[i].classList.remove("selecionado")
-      } 
-    })
-  }
-
-}
-
-

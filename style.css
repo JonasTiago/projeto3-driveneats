@@ -16,14 +16,15 @@ header {
     position: fixed;
     top :0;
     left: 0;
-    background-color: red;
+    background-color: #CF2B2B;
     width: 100vw;
     height: 95px;
-    color: white;
+    color: #fff;
     
 }
 header > h1 {
     font-family: 'Righteous', cursive;
+    font-weight: 400;
     margin: 20px 0 0 20px;
     font-size: 44px;
     letter-spacing: -1,2%;
@@ -65,16 +66,15 @@ a{
 
 .option {
     position: relative;
-    cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin:10px 15px  20px 0px;
     height: 216px;
     width: 180px;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.23);
     border-radius: 9px;
     border: 5px solid transparent;
@@ -125,14 +125,17 @@ footer {
 }
 
 footer button {
-    width: 350px;
+    width: 364px;
     height: 61px;
     border-radius: 50px;
     margin-top: 15px;
+    font-family: 'Roboto', sans-serif; 
     font-size: 20px;
     background-color: #CBCBCB;
     color: #fff;
+    font-weight: 400;
     margin: 15px auto 0 auto;
+    border-color: transparent;
 }
 
 footer button > a{
@@ -144,7 +147,7 @@ ion-icon {
 }
 
 .selecionado {
-    border-color:green;
+    border-color:#32B72F;
 }
 
 .selecionado > ion-icon {
@@ -158,8 +161,8 @@ ion-icon {
 
 .liberado {
     background-color: #32B72F;
+    border:1px solid #1a7a19;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.384);
+    font-weight: bold;
 } 
 
-alert {
-    background-color: #32B72F;
-}

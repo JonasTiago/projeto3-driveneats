@@ -18,8 +18,9 @@ function itemSelecionado(escolha, secao){
 
   if(escolhidos > 2){
     let botaoPedido = document.querySelector('button')
-      botaoPedido.removeAttribute('disabled')
-      botaoPedido.classList.add('liberado')   
+    botaoPedido.innerHTML = 'Fechar Pedido'
+    botaoPedido.removeAttribute('disabled')
+    botaoPedido.classList.add('liberado')   
   }
 
   pedidosEscolhidos(secao)

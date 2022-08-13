@@ -59,6 +59,10 @@ a{
     display: flex;
 }
 
+.options::-webkit-scrollbar{
+    display: none;
+}
+
 .option {
     position: relative;
     cursor: pointer;
@@ -79,6 +83,7 @@ a{
 .option img {
     width: 144px;
     height: 87px;
+    border-radius: 5px; 
 }
 
 .option h3 {
@@ -130,6 +135,10 @@ footer button {
     margin: 15px auto 0 auto;
 }
 
+footer button > a{
+    color: none;
+}
+
 ion-icon {
     display: none;
 }
@@ -143,6 +152,14 @@ ion-icon {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    color: green;
+    color: #32B72F;
     font-size: 20px;
+}
+
+.liberado {
+    background-color: #32B72F;
+} 
+
+alert {
+    background-color: #32B72F;
 }

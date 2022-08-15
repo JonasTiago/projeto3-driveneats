@@ -69,7 +69,6 @@ function confirmarPedido(){
 
 let mensagemAuto;
 function enviarPedido() {
-  //precoFinal = parseFloat(pratoEscolhido[1]) + parseFloat(bebidasEscolhido[1]) + parseFloat(sobremesaEscolhido[1])
   let mensagem = `Olá, gostaria de fazer o pedido:
   - Prato: ${pratoEscolhido[0]}
   - Bebida: ${bebidasEscolhido[0]}

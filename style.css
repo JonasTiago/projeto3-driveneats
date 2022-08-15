@@ -19,11 +19,8 @@ header {
     background-color: #CF2B2B;
     width: 100vw;
     height: 95px;
-    color: #fff;
-<<<<<<< HEAD
-=======
-    
->>>>>>> 229290a931433833a210c2750c44674326c0e9d0
+    color: #fff 
+
 }
 
 header > h1 {
@@ -141,26 +138,16 @@ footer button {
     font-weight: 400;
     margin: 15px auto 0 auto;
     border-color: transparent;
-<<<<<<< HEAD
-    
-=======
+
 }
 
-footer button > a{
-    color: none;
->>>>>>> 229290a931433833a210c2750c44674326c0e9d0
-}
 
 ion-icon {
     display: none;
 }
 
 .selecionado {
-<<<<<<< HEAD
     border-color: #32B72F;
-=======
-    border-color:#32B72F;
->>>>>>> 229290a931433833a210c2750c44674326c0e9d0
 }
 
 .selecionado > ion-icon {
@@ -177,7 +164,6 @@ ion-icon {
     border:1px solid #1a7a19;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.384);
     font-weight: bold;
-<<<<<<< HEAD
 }
 
 .invisivel {
@@ -259,7 +245,4 @@ ion-icon {
     font-weight: 700;
     font-size: 20px;
 }
-=======
-} 
-
->>>>>>> 229290a931433833a210c2750c44674326c0e9d0
+ 

@@ -54,13 +54,13 @@
                 </div>
                 <div class="option bebida-dois" onclick="itemSelecionado('.bebida-dois', '#bebidas')" >
                     <img src="img/jesus.jpg" alt="imgem da bebida">
-                    <h3>Guarana jesus</h3>
+                    <h3>Guarana Jesus</h3>
                     <p>Lata 350ml</p>
                     <p>R$ <span>2.90</span></p><ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="option bebida-tres" onclick="itemSelecionado('.bebida-tres', '#bebidas')"  >
                     <img src="img/saogeraldo.jpeg" alt="imgem da bebida">
-                    <h3>São geraldo</h3>
+                    <h3>São Geraldo</h3>
                     <p>Garrafa 2L</p>
                     <p>R$ <span>5.90</span></p><ion-icon name="checkmark-circle"></ion-icon>
                 </div>
@@ -101,11 +101,23 @@
                 </div>
             </div>
         </div>
-        
     </main>
     <footer>
-        <button onclick="finalizarPedido()" disabled>Selecione os 3 itens<br>para fechar o pedido</button>
+        <button onclick="confirmarPedido()" disabled>Selecione os 3 itens<br>para fechar o pedido</button>
     </footer>
+    <div class="confimacao invisivel">
+        <div class="pedido-final"> 
+            <h2>Confirme o seu pedido</h2>
+            <div>
+                <p><span>Prato</span><span>valor</span></p>
+                <p><span>Bebida</span><span>valor</span></p>
+                <p><span>Sobremesa</span><span>valor</span></p>
+                <p><span>Total</span><span>valor</span></p>
+            </div>
+            <button class="confirmar" onclick="enviarPedido()" value="reset">Tudo certo, pode pedir!</button>
+            <button class="cancelar" onclick="confirmarPedido()">Cancelar</button>
+        </div>
+    </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
